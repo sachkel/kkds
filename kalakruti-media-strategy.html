@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कलाकृती मीडिया - व्यापक डिजिटल रणनीती | Kalakruti Media - Comprehensive Digital Strategy</title>
+    <style>
+        :root {
+            --primary: #FF7722;
+            --secondary: #4A1D96;
+            --accent: #FFB627;
+            --text-dark: #333333;
+            --text-light: #FFFFFF;
+            --background: #FFFFFF;
+            --background-alt: #F6F6F6;
+            --border: #E0E0E0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo {
+            max-width: 250px;
+            margin-bottom: 1.5rem;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin: 1.5rem 0;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin: 1.2rem 0;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-icon {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .language-block {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .lang-title {
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-caption {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: var(--text-light);
+        }
+        
+        tr:nth-child(even) {
+            background-color: var(--background-alt);
+        }
+        
+        .card {
+            background-color: var(--background-alt);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .persona {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--primary);
+        }
+        
+        .persona-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .persona-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 2.5rem;
+            margin-right: 1.5rem;
+        }
+        
+        .persona-info {
+            flex: 1;
+        }
+        
+        .persona-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .persona-role {
+            font-style: italic;
+            color: var(--secondary);
+        }
+        
+        .persona-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .persona-detail {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .colored-box {
+            background-color: rgba(255, 119, 34, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .phase {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--secondary);
+        }
+        
+        .phase-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .phase-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+        
+        .phase-timeline {
+            background-color: var(--background-alt);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        .footer {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            
+            .persona-details {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .pill {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--text-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #666;
+        }
+        
+        .content-example {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .platform-icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+        
+        .warning-box {
+            background-color: rgba(255, 182, 39, 0.2);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 992px) {
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+        .content-distribution {
+            display: flex;
+            margin: 2rem 0;
+        }
+        
+        .distribution-bar {
+            height: 40px;
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .dist-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .dist-marathi {
+            background-color: var(--primary);
+            width: 70%;
+        }
+        
+        .dist-bollywood {
+            background-color: var(--secondary);
+            width: 20%;
+        }
+        
+        .dist-hollywood {
+            background-color: var(--accent);
+            width: 5%;
+        }
+        
+        .dist-tollywood {
+            background-color: #2ca58d;
+            width: 5%;
+        }
+        
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .calendar-day {
+            background-color: var(--background-alt);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .calendar-day-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        .platform-section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .platform-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--background-alt);
+            padding-bottom: 1rem;
+        }
+        
+        .platform-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary);
+            margin-left: 1rem;
+        }
+        
+        .technical-item {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: flex-start;
+        }
+        
+        .technical-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .technical-details {
+            flex: 1;
+        }
+        
+        .technical-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        pre {
+            white-space: pre-wrap;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="https://sachkel.github.io/kklogos/logo8.jpg" alt="Kalakruti Media Logo" class="logo" />
+                <h1>कलाकृती मीडिया - व्यापक डिजिटल रणनीती</h1>
+                <h1>KALAKRUTI MEDIA - COMPREHENSIVE DIGITAL STRATEGY</h1>
+                <p><em>एप्रिल २०२५ | April 2025</em></p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Executive Overview Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>कार्यकारी सारांश | EXECUTIVE OVERVIEW</h2>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://sachkel.github.io/kkbb/assets/images/kkbb1.jpg" alt="Kalakruti Media Brand Vision" />
+                <p class="image-caption">कलाकृती मीडिया ब्रँड व्हिजन | Kalakruti Media Brand Vision</p>
+            </div>
+            
+            <div class="language-block">
+                <div>
+                    <div class="lang-title">मराठी:</div>
+                    <p>कलाकृती मीडिया महाराष्ट्रातील मराठी मनोरंजन क्षेत्रातील अग्रगण्य डिजिटल माध्यम म्हणून एका महत्त्वपूर्ण टप्प्यावर उभी आहे. ही व्यापक रणनीती कलाकृतीच्या वैशिष्ट्यपूर्ण ताकदीचा - म्हणजेच कलाकारांच्या खऱ्या व्यक्तिमत्त्वाचा - वापर करते, तसेच तांत्रिक आव्हानांना सामोरे जाऊन सर्व डिजिटल माध्यमांवर शाश्वत वाढीसाठी एक आराखडा तयार करते.</p>
+                </div>
+                
+                <div>
+                    <div class="lang-title">English:</div>
+                    <p>Kalakruti Media stands at a pivotal moment in its evolution as Maharashtra's premier digital platform for authentic Marathi entertainment content. This comprehensive strategy leverages Kalakruti's unique strength - revealing the genuine personalities behind performances - while addressing technical challenges and establishing a framework for sustainable growth across all digital touchpoints.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Resource Requirements Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>संसाधन आवश्यकता | RESOURCE REQUIREMENTS</h2>
+            </div>
+            
+            <h3>संसाधन आवश्यकता | Resource Requirements</h3>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h4>टीम स्ट्रक्चर गरजा | Team Structure Needs:</h4>
+                    <ul>
+                        <li>कंटेंट स्ट्रॅटेजिस्ट/एडिटर (1) | Content strategist/editor (1)</li>
+                        <li>लेखक/कंटेंट क्रिएटर्स (2-3) | Writers/content creators (2-3)</li>
+                        <li>व्हिज्युअल कंटेंट स्पेशलिस्ट (1-2) | Visual content specialists (1-2)</li>
+                        <li>सोशल मीडिया मॅनेजर (1) | Social media manager (1)</li>
+                        <li>वेब डेव्हलपर (आवश्यकतेनुसार) | Web developer (as needed)</li>
+                        <li>अॅनालिटिक्स सपोर्ट (पार्ट-टाइम) | Analytics support (part-time)</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>तांत्रिक आवश्यकता | Technology Requirements:</h4>
+                    <ul>
+                        <li>कंटेंट मॅनेजमेंट सिस्टिम ऑप्टिमायझेशन | Content management system optimization</li>
+                        <li>अॅनालिटिक्स आणि मोजमाप टूल्स | Analytics and measurement tools</li>
+                        <li>मीडिया प्रोडक्शन इक्विपमेंट | Media production equipment</li>
+                        <li>कंटेंट प्लॅनिंग आणि कोलॅबोरेशन टूल्स | Content planning and collaboration tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Measurement Framework Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>मोजमाप फ्रेमवर्क | MEASUREMENT FRAMEWORK</h2>
+            </div>
+            
+            <h3>प्रमुख कामगिरी निर्देशांक (KPIs) | Key Performance Indicators (KPIs)</h3>
+            
+            <div class="image-container">
+                <img src="https://sachkel.github.io/kkbb/assets/images/kkbb6.jpg" alt="KPI Dashboard Concept" />
+                <p class="image-caption">KPI डॅशबोर्ड कॉन्सेप्ट | KPI Dashboard Concept</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h4>प्रेक्षक वाढ मेट्रिक्स | Audience Growth Metrics:</h4>
+                    <ul>
+                        <li>मासिक अॅक्टिव्ह वापरकर्ते (लक्ष्य: 30% YoY वाढ) | Monthly active users (target: 30% YoY growth)</li>
+                        <li>सोशल मीडिया फॉलोइंग (लक्ष्य: 40% YoY वाढ) | Social media following (target: 40% YoY growth)</li>
+                        <li>ईमेल सबस्क्रायबर्स (लक्ष्य: 25% YoY वाढ) | Email subscribers (target: 25% YoY growth)</li>
+                        <li>रिटर्न व्हिजिटर रेट (लक्ष्य: >35%) | Return visitor rate (target: >35%)</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>प्रतिसाद मेट्रिक्स | Engagement Metrics:</h4>
+                    <ul>
+                        <li>कंटेंट कन्झम्प्शन (लक्ष्य: सरासरी 5+ मिनिट सेशन अवधी) | Content consumption (target: avg 5+ min session duration)</li>
+                        <li>इंटरॅक्शन रेट (लक्ष्य: >8% सर्व प्लॅटफॉर्मवर) | Interaction rate (target: >8% across platforms)</li>
+                        <li>कंटेंट शेअरिंग (लक्ष्य: 2-3% शेअर रेट) | Content sharing (target: 2-3% share rate)</li>
+                        <li>कमेंट क्वालिटी आणि सेंटिमेंट (लक्ष्य: 80% पॉझिटिव्ह/न्युट्रल) | Comment quality and sentiment (target: 80% positive/neutral)</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>परफॉर्मन्स मेट्रिक्स | Performance Metrics:</h4>
+                    <ul>
+                        <li>वेबसाईट लोड टाइम (लक्ष्य: <3 सेकंद) | Website load time (target: <3 seconds)</li>
+                        <li>मोबाईल युजॅबिलिटी स्कोअर (लक्ष्य: >90/100) | Mobile usability score (target: >90/100)</li>
+                        <li>तांत्रिक एरर कमी (लक्ष्य: <1% एरर रेट) | Technical error reduction (target: <1% error rate)</li>
+                        <li>CMS कार्यक्षमता (लक्ष्य: 50% प्रकाशन वेळात कपात) | CMS efficiency (target: 50% reduction in publishing time)</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>कंटेंट प्रभाव | Content Effectiveness:</h4>
+                    <ul>
+                        <li>कंटेंट स्तंभानुसार परफॉर्मन्स | Performance by content pillar</li>
+                        <li>प्लॅटफॉर्मनुसार फॉरमॅट प्रभाव | Format effectiveness by platform</li>
+                        <li>कलाकार/विषय परफॉर्मन्स विश्लेषण | Artist/topic performance analysis</li>
+                        <li>कंटेंट दीर्घजीविता (एव्हरग्रीन विरुद्ध टाइमली) | Content longevity (evergreen vs. timely)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content Strategy Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>कंटेंट रणनीती | CONTENT STRATEGY</h2>
+            </div>
+            
+            <h3>कंटेंट रेशो अंमलबजावणी | Content Ratio Implementation</h3>
+            
+            <div class="image-container">
+                <img src="https://sachkel.github.io/kkbb/assets/images/kkbb4.jpg" alt="Content Distribution Chart" />
+                <p class="image-caption">कंटेंट वितरण चार्ट | Content Distribution Chart</p>
+            </div>
+            
+            <h4>कंटेंट वितरण | Content Distribution:</h4>
+            
+            <div class="content-distribution">
+                <div class="distribution-bar">
+                    <div class="dist-segment dist-marathi">मराठी कंटेंट 70%</div>
+                    <div class="dist-segment dist-bollywood">बॉलिवूड 20%</div>
+                    <div class="dist-segment dist-hollywood">हॉलिवूड 5%</div>
+                    <div class="dist-segment dist-tollywood">टॉलिवूड 5%</div>
+                </div>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: var(--primary);"></div>
+                    <div>मराठी कंटेंट / Marathi Content (70%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: var(--secondary);"></div>
+                    <div>बॉलिवूड / Bollywood (20%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: var(--accent);"></div>
+                    <div>हॉलिवूड / Hollywood (5%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2ca58d;"></div>
+                    <div>टॉलिवूड / Tollywood (5%)</div>
+                </div>
+            </div>
+            
+            <h3>कंटेंट स्तंभ आणि उदाहरणे | Content Pillars & Examples</h3>
+            
+            <!-- Content Pillar 1 -->
+            <div class="card">
+                <h4>१. कलाकाराच्या पलीकडची व्यक्ती | The Person Behind the Artist</h4>
+                <p><em>मराठी मनोरंजन क्षेत्रातील व्यक्तींच्या वास्तव मानवी कथा | The authentic human stories behind Marathi entertainment personalities</em></p>
+                
+                <div class="colored-box">
+                    <h4>प्रमुख फॉरमॅट | Key Formats:</h4>
+                    <ul>
+                        <li><strong>"अनोळखी गोष्टी"</strong> - Unknown stories series</li>
+                        <li><strong>"कलाकाराचा प्रवास"</strong> - Artist journey profiles</li>
+                        <li><strong>"चहापानावरच्या गप्पा"</strong> - Casual conversation series</li>
+                    </ul>
+                </div>
+                <h5>कंटेंट उदाहरणे | Content Examples:</h5>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>प्लॅटफॉर्म | Platform</th>
+                            <th>फॉरमॅट | Format</th>
+                            <th>उदाहरण | Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website</td>
+                            <td>Long-form Article</td>
+                            <td>"मराठी रंगभूमीवरून ऑस्करपर्यंत: महेश मांजरेकर यांचा प्रवास"</td>
+                        </tr>
+                        <tr>
+                            <td>YouTube</td>
+                            <td>Interview Series</td>
+                            <td>"अभिनेत्री मुक्ता बर्वेसोबत घरगुती जेवण आणि गप्पा"</td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>Reel</td>
+                            <td>"सोनाली कुलकर्णीची पहिली ऑडिशन: अपयशातून शिकलेले धडे"</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>Q&A</td>
+                            <td>"प्रसाद ओक उत्तर देतात रसिकांच्या प्रश्नांना: लाईव्ह सेशन"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Content Pillar 2 -->
+            <div class="card">
+                <h4>२. पडद्यामागील कथा | Behind the Curtain Stories</h4>
+                <p><em>निर्मिती प्रक्रिया आणि क्रिएटिव्ह प्रोसेसचा विशेष अनुभव | Exclusive access to the creative and production processes</em></p>
+                
+                <div class="colored-box">
+                    <h4>प्रमुख फॉरमॅट | Key Formats:</h4>
+                    <ul>
+                        <li><strong>"सेटवरचे क्षण"</strong> - On-set moments</li>
+                        <li><strong>"निर्मितीची गोष्ट"</strong> - Production journey</li>
+                        <li><strong>"टेक्निकल टॉक"</strong> - Craft and technical insights</li>
+                    </ul>
+                </div>
+                
+                <h5>कंटेंट उदाहरणे | Content Examples:</h5>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>प्लॅटफॉर्म | Platform</th>
+                            <th>फॉरमॅट | Format</th>
+                            <th>उदाहरण | Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website</td>
+                            <td>Photo Essay</td>
+                            <td>"झी स्टुडिओमध्ये 'पांढरा रेशीम' चित्रपटाचे शूटिंग: फोटो स्टोरी"</td>
+                        </tr>
+                        <tr>
+                            <td>YouTube</td>
+                            <td>Documentary</td>
+                            <td>"एका वेबसिरीजची निर्मिती: 'थिमला' च्या पडद्यामागची ३० दिवसांची यात्रा"</td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>Stories</td>
+                            <td>"नाटक रंगमंचावर येण्यापूर्वी: 'त्यानं मला जागं केलं' च्या तालमींमधून लाईव्ह अपडेट्स"</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>Live</td>
+                            <td>"चित्रकार ते सेट डिझाइनर: प्रवीण लांडगे यांच्यासोबत मेकिंग ऑफ द सेट"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Platform Strategy Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>प्लॅटफॉर्म रणनीती | PLATFORM STRATEGY</h2>
+            </div>
+            
+            <!-- Website Platform -->
+            <div class="platform-section">
+                <div class="platform-header">
+                    <img src="https://sachkel.github.io/kkbb/assets/images/kkbb5.jpg" width="50" height="50" alt="Website Icon" />
+                    <div class="platform-name">वेबसाईट | Website (kalakrutimedia.com)</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://sachkel.github.io/kkbb/assets/images/kkbb5.jpg" alt="Website Mockup Concept" />
+                    <p class="image-caption">वेबसाईट मॉकअप कॉन्सेप्ट | Website Mockup Concept</p>
+                </div>
+                
+                <div class="grid-2">
+                    <div>
+                        <h4>रणनीतिक भूमिका | Strategic Role:</h4>
+                        <p>सखोल मराठी मनोरंजन सामग्रीसाठी प्राथमिक कंटेंट हब आणि गंतव्य स्थान | Primary content hub and destination for in-depth Marathi entertainment content</p>
+                        
+                        <h4>कंटेंट प्राधान्यक्रम | Content Priorities:</h4>
+                        <ul>
+                            <li>लांब-फॉर्म मुलाखती आणि विशेष लेख | Long-form interviews and features</li>
+                            <li>सर्वसमावेशक कलाकार प्रोफाइल्स | Comprehensive artist profiles</li>
+                            <li>फोटो गॅलरी आणि व्हिज्युअल स्टोरीटेलिंग | Photo galleries and visual storytelling</li>
+                            <li>मजबूत सर्च असलेली संग्रहित सामग्री | Archival content with robust search</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>तांत्रिक आवश्यकता | Technical Requirements:</h4>
+                        <ul>
+                            <li>मोबाइल-फर्स्ट रिस्पॉन्सिव्ह डिझाइन | Mobile-first responsive design</li>
+                            <li>जलद लोडिंग वेळ (<3 seconds) | Fast loading times</li>
+                            <li>चांगली नेव्हिगेशन आणि कंटेंट डिस्कव्हरी | Better navigation and content discovery</li>
+                            <li>मराठी भाषा ऑप्टिमायझेशन | Marathi language optimization</li>
+                            <li>विश्वसनीय ड्राफ्ट सेव्हिंग सिस्टम | Reliable draft saving system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-example">
+                    <h4>कंटेंट उदाहरण | Content Example:</h4>
+                    <pre>
+मुख्यपृष्ठ > कलाकार प्रोफाईल > मकरंद अनासपुरे
+
+"मी सामान्य माणूस आहे, माझं नेहमी हेच ध्येय राहिलंय"
+मकरंद अनासपुरे | एक्सक्लुसिव्ह मुलाखत
+
+[फोटो गॅलरी]
+
+४० वर्षांहून अधिक काळ मराठी रंगभूमी आणि चित्रपटसृष्टीत अभिनय करणारे मकरंद अनासपुरे यांची ही खास मुलाखत. त्यांच्या बालपणापासून ते आजपर्यंतच्या प्रवासात डोकावतानाची गोष्ट...
+
+[पुढे वाचा]
+                    </pre>
+                </div>
+            </div>
+            <!-- Instagram Platform -->
+            <div class="platform-section">
+                <div class="platform-header">
+                    <img src="https://sachkel.github.io/kkbb/assets/images/kkbb2.jpg" width="50" height="50" alt="Instagram Icon" />
+                    <div class="platform-name">इंस्टाग्राम | Instagram (@kalakrutimedia)</div>
+                </div>
+                
+                <div class="grid-2">
+                    <div>
+                        <h4>रणनीतिक भूमिका | Strategic Role:</h4>
+                        <p>व्हिज्युअल स्टोरीटेलिंग आणि प्रेक्षक एंगेजमेंट ड्राइव्हर | Visual storytelling and audience engagement driver</p>
+                        
+                        <h4>कंटेंट प्राधान्यक्रम | Content Priorities:</h4>
+                        <ul>
+                            <li>पडद्यामागचे दृश्य क्षण | Behind-the-scenes visual moments</li>
+                            <li>कलाकार स्पॉटलाइट आणि अवतरणे | Artist spotlights and quotes</li>
+                            <li>शॉर्ट-फॉर्म व्हिडिओ कंटेंट | Short-form video content</li>
+                            <li>इंटरॅक्टिव्ह स्टोरीज आणि पोल्स | Interactive Stories and polls</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>फॉरमॅट रणनीती | Format Strategy:</h4>
+                        <ul>
+                            <li><strong>फीड:</strong> कथा सांगणाऱ्या कॅप्शनसह उच्च-गुणवत्तेचे व्हिज्युअल्स | High-quality visuals with storytelling captions</li>
+                            <li><strong>स्टोरीज:</strong> दैनिक अपडेट्स, पोल्स, प्रश्न | Daily updates, polls, questions</li>
+                            <li><strong>रील्स:</strong> 15-30 सेकंदांचे आकर्षक क्षण | 15-30 second engaging moments</li>
+                            <li><strong>IGTV:</strong> विस्तारित मुलाखती (3-5 मिनिटे) | Extended interviews (3-5 minutes)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-example">
+                    <h4>कंटेंट उदाहरण | Content Example:</h4>
+                    <pre>
+[Video Reel: सई ताम्हणकर शेअर करतात त्यांच्या पहिल्या ऑडिशनचा अनुभव]
+
+Caption: "एका ऑडिशनमध्ये रडल्यामुळे मला भूमिका मिळाली" - सई ताम्हणकर शेअर करतात त्यांच्या अभिनय प्रवासातील अविस्मरणीय क्षण. संपूर्ण मुलाखतीसाठी लिंक बायोमध्ये.
+
+#MarathiActor #BehindTheScenes #SaiTamhankar #कलाकृतीमीडिया #मराठीसिनेमा
+                    </pre>
+                </div>
+            </div>
+            
+            <!-- YouTube Platform -->
+            <div class="platform-section">
+                <div class="platform-header">
+                    <img src="https://sachkel.github.io/kkbb/assets/images/kkbb3.jpg" width="50" height="50" alt="YouTube Icon" />
+                    <div class="platform-name">यूट्यूब | YouTube (Kalakruti Media)</div>
+                </div>
+                
+                <div class="grid-2">
+                    <div>
+                        <h4>रणनीतिक भूमिका | Strategic Role:</h4>
+                        <p>सिग्नेचर व्हिडिओ फॉरमॅट आणि मालिकांसाठी होम | Home for signature video formats and series</p>
+                        
+                        <h4>कंटेंट प्राधान्यक्रम | Content Priorities:</h4>
+                        <ul>
+                            <li>पूर्ण-लांबीच्या मुलाखती आणि संवाद | Full-length interviews and conversations</li>
+                            <li>सातत्यपूर्ण फॉरमॅटिंगसह मालिका | Series with consistent formatting</li>
+                            <li>पडद्यामागचे डॉक्युमेंटरी कंटेंट | Behind-the-scenes documentary content</li>
+                            <li>उद्योग विषयांवर पॅनल चर्चा | Panel discussions on industry topics</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>मालिका विकास | Series Development:</h4>
+                        <ul>
+                            <li><strong>"कलाकाराच्या गप्पा"</strong> - Artist Conversations (10-15 minutes)</li>
+                            <li><strong>"सेटवरचे क्षण"</strong> - On-Set Moments (5-8 minutes)</li>
+                            <li><strong>"कला मंथन"</strong> - Art Discussions (15-20 minutes)</li>
+                            <li><strong>"आठवणींचा पट"</strong> - Memory Lane (8-12 minutes)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Technical Roadmap Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>तांत्रिक रोडमॅप | TECHNICAL ROADMAP</h2>
+            </div>
+            
+            <h3>सध्याच्या अडचणी | Current Pain Points</h3>
+            
+            <p class="colored-box">क्लायंटच्या फीडबॅकवर आधारित, या समस्यांना त्वरित लक्ष देणे आवश्यक आहे | Based on client feedback, these issues require immediate attention</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h4>1. परफॉर्मन्स समस्या | Performance Issues</h4>
+                    <ul>
+                        <li>लेख लोड होण्यास वेळ (सध्या >8 सेकंद) | Slow article loading (>8 seconds currently)</li>
+                        <li>वेबसाईट वारंवार फ्रीज होते | Website frequently freezes</li>
+                        <li>उच्च बाउन्स रेट (62%) | High bounce rate (62%)</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>2. रिस्पॉन्सिव्ह डिझाइन अपयश | Responsive Design Failures</h4>
+                    <ul>
+                        <li>असंगत मोबाईल/डेस्कटॉप अनुभव | Inconsistent mobile/desktop experience</li>
+                        <li>फोटो मोबाईलवर अयोग्य प्रदर्शित | Photos display incorrectly on mobile</li>
+                        <li>लहान स्क्रीनवर नेव्हिगेशन अवघड | Navigation difficult on small screens</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>3. कंटेंट मॅनेजमेंट समस्या | Content Management Issues</h4>
+                    <ul>
+                        <li>अविश्वसनीय ड्राफ्ट सेव्हिंग | Unreliable draft saving</li>
+                        <li>डुप्लिकेट कंटेंट दिसणे | Duplicate content appearing</li>
+                        <li>नेव्हिगेशन बटण कार्यरत नाहीत | Navigation arrows non-functional</li>
+                        <li>अकार्यक्षम प्रकाशन वर्कफ्लो | Inefficient publishing workflow</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>तांत्रिक अंमलबजावणी योजना | Technical Implementation Plan</h3>
+            
+            <!-- Phase 1 -->
+            <div class="phase">
+                <div class="phase-header">
+                    <div class="phase-title">फेज 1: क्विक फिक्सेस | Phase 1: Quick Fixes</div>
+                    <div class="phase-timeline">1-30 दिवस | 1-30 days</div>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>समस्या | Issue</th>
+                            <th>उपाय | Solution</th>
+                            <th>प्राधान्य | Priority</th>
+                            <th>वेळापत्रक | Timeline</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Slow loading</td>
+                            <td>Image optimization, caching</td>
+                            <td>Critical</td>
+                            <td>Week 1-2</td>
+                        </tr>
+                        <tr>
+                            <td>Draft saving</td>
+                            <td>Backend fix, autosave feature</td>
+                            <td>Critical</td>
+                            <td>Week 1</td>
+                        </tr>
+                        <tr>
+                            <td>Navigation arrows</td>
+                            <td>Fix JavaScript functionality</td>
+                            <td>High</td>
+                            <td>Week 2</td>
+                        </tr>
+                        <tr>
+                            <td>Duplicate content</td>
+                            <td>Content audit, cleanup</td>
+                            <td>Medium</td>
+                            <td>Week 3-4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Implementation Roadmap Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>अंमलबजावणी रोडमॅप | IMPLEMENTATION ROADMAP</h2>
+            </div>
+            
+            <!-- Phase 1 -->
+            <div class="phase">
+                <div class="phase-header">
+                    <div class="phase-title">फेज 1: फाउंडेशन बिल्डिंग | Phase 1: Foundation Building</div>
+                    <div class="phase-timeline">1-30 दिवस | 1-30 Days</div>
+                </div>
+                
+                <div class="grid-2">
+                    <div>
+                        <h4>रणनीतिक प्राधान्यक्रम | Strategic Priorities:</h4>
+                        <ul>
+                            <li>सुधारित कंटेंट स्तंभ फ्रेमवर्क लाँच | Launch revised content pillar framework</li>
+                            <li>महत्त्वपूर्ण तांत्रिक समस्यांचे निराकरण | Address critical technical issues</li>
+                            <li>मोजमापाचा बेसलाइन स्थापित करणे | Establish measurement baseline</li>
+                            <li>नवीन संरचनेसह कंटेंट नियोजन सुरू | Begin content planning with new structure</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>प्रमुख डेलिव्हरेबल्स | Key Deliverables:</h4>
+                        <ul>
+                            <li>कंटेंट स्तंभ दस्तावेजीकरण आणि टेम्पलेट्स | Content pillar documentation & templates</li>
+                            <li>तांत्रिक क्विक फिक्सेस अंमलबजावणी | Technical quick fixes implementation</li>
+                            <li>सर्व प्लॅटफॉर्मवर अॅनालिटिक्स सेटअप | Analytics setup across platforms</li>
+                            <li>एडिटोरियल कॅलेंडर (पहिले 90 दिवस) | Editorial calendar (first 90 days)</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>यश मापदंड | Success Metrics:</h4>
+                        <ul>
+                            <li>कंटेंट फ्रेमवर्क स्वीकृती | Content framework adoption</li>
+                            <li>तांत्रिक बेसलाइन सुधारणा (लोड टाइम <5s) | Technical baseline improvement</li>
+                            <li>मोजमाप प्रणाली अंमलबजावणी | Measurement system implementation</li>
+                            <li>पहिल्या कंटेंट मालिकेचे नियोजन पूर्ण | First content series planning complete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Brand Positioning Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>ब्रँड पोझिशनिंग | BRAND POSITIONING</h2>
+            </div>
+            
+            <h3>ब्रँडचे मूळ सार | Core Brand Essence</h3>
+            
+            <div class="image-container">
+                <img src="https://sachkel.github.io/kklogos/logo8.jpg" alt="Mask Symbolism" />
+                <p class="image-caption">मुखवट्याच्या प्रतीकात्मकता | Mask Symbolism</p>
+            </div>
+            
+            <div class="language-block">
+                <div>
+                    <div class="lang-title">मराठी:</div>
+                    <p>कलाकृती मीडिया <strong>"मुखवट्याच्या पलीकडे"</strong> जाऊन कलाकारांचे वास्तविक व्यक्तिमत्व आणि त्यांच्या कथा संवादी, सहज शैलीत सादर करते, जे प्रेक्षकांना कलाकारांसोबत थेट संवाद साधल्यासारखे वाटते.</p>
+                </div>
+                
+                <div>
+                    <div class="lang-title">English:</div>
+                    <p>Kalakruti Media is positioned as a <strong>"Beyond the Mask"</strong> platform - revealing the authentic personalities and stories behind Marathi entertainment through conversational, accessible content that feels like a privileged conversation with the artists themselves.</p>
+                </div>
+            </div>
+            <!-- Audience Understanding Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔶</div>
+                <h2>प्रेक्षक समज | AUDIENCE UNDERSTANDING</h2>
+            </div>
+            
+            <h3>प्रमुख प्रेक्षक व्यक्तिचित्रे | Primary Audience Personas</h3>
+            
+            <div class="image-container">
+                <img src="https://sachkel.github.io/kkbb/assets/images/kkbb2.jpg" alt="Audience Persona Visualization" />
+                <p class="image-caption">प्रेक्षक व्यक्तिचित्र विजुअलायझेशन | Audience Persona Visualization</p>
+            </div>
+            
+            <!-- Persona 1 -->
+            <div class="persona">
+                <div class="persona-header">
+                    <div class="persona-avatar">न</div>
+                    <div class="persona-info">
+                        <div class="persona-name">नीलेश पवार | Nilesh Pawar</div>
+                        <div class="persona-role">समर्पित मराठी मनोरंजन रसिक | The Dedicated Marathi Entertainment Enthusiast</div>
+                    </div>
+                </div>
+                
+                <div class="persona-details">
+                    <div class="persona-detail">
+                        <span class="detail-label">वय / Age:</span>
+                        <span>32</span>
+                    </div>
+                    <div class="persona-detail">
+                        <span class="detail-label">स्थान / Location:</span>
+                        <span>पुणे / Pune</span>
+                    </div>
+                    <div class="persona-detail">
+                        <span class="detail-label">व्यवसाय / Occupation:</span>
+                        <span>आयटी प्रोफेशनल / IT Professional</span>
+                    </div>
+                    <div class="persona-detail">
+                        <span class="detail-label">मनोरंजन आवड / Entertainment Interests:</span>
+                        <span>मराठी थिएटर, चित्रपट, वेब मालिका / Marathi theater, films, web series</span>
+                    </div>
+                </div>
+                
+                <h4>गरजा / Needs:</h4>
+                <ul>
+                    <li>पडद्यामागील वास्तव माहिती / Authentic behind-the-scenes content</li>
+                    <li>मराठी मनोरंजनाबद्दल कार्यक्षम अपडेट्स / Efficient updates on Marathi entertainment</li>
+                    <li>त्याच्या सांस्कृतिक जोडणीचा आदर करणारी सामग्री / Content that respects his cultural connection</li>
+                </ul>
+                
+                <div class="colored-box">
+                    <h4>प्रतिसाद पद्धत / Engagement Approach:</h4>
+                    <p>"नीलेशसाठी आम्ही अप्रकाशित मुलाखती, सेटवरील छायाचित्रे आणि कलाकारांच्या मनातील विचार शेअर करू. त्याला ५-७ मिनिटांत महत्त्वाची अपडेट्स मिळावीत याची काळजी घेऊ."</p>
+                </div>
+            </div>
+            <!-- Key Insights Section -->
+            <div class="card">
+                <h4>प्रमुख अंतर्दृष्टी | Key Insights:</h4>
+                
+                <div class="grid-2">
+                    <div>
+                        <p><strong>1. मोबाईल प्राधान्य / Mobile Priority:</strong></p>
+                        <ul>
+                            <li>78% of content consumed on mobile devices</li>
+                            <li>Peak mobile usage: Morning commute (7-9am), Lunch break (1-2pm), Evening (8-11pm)</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p><strong>2. थिएटर ते OTT / Theater to OTT:</strong></p>
+                        <ul>
+                            <li>Growing interest in artists who cross over from stage to screen</li>
+                            <li>65% of theater enthusiasts now also follow OTT content</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p><strong>3. प्रादेशिक जोडणी / Regional Connection:</strong></p>
+                        <ul>
+                            <li>Content with specific Maharashtra regional references drives 3x engagement</li>
+                            <li>Nostalgia-driven content performs particularly well with diaspora audience</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p><strong>4. व्हिडिओ वृद्धी / Video Growth:</strong></p>
+                        <ul>
+                            <li>Video content consumption growing 34% year over year</li>
+                            <li>Ideal video length: 3-4 minutes for social, 7-12 minutes for website/YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>मोजमाप आणि रिपोर्टिंग वेळापत्रक | Measurement & Reporting Cadence</h3>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h4>दैनंदिन निरीक्षण | Daily Monitoring:</h4>
+                    <ul>
+                        <li>ट्रॅफिक आणि प्रतिसादाचे मूलभूत आकडे / Traffic and engagement basics</li>
+                        <li>तांत्रिक कामगिरी तपासणी / Technical performance checks</li>
+                        <li>कंटेंट प्रकाशन सत्यापन / Content publishing verification</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>साप्ताहिक विश्लेषण | Weekly Analysis:</h4>
+                    <ul>
+                        <li>प्रकारानुसार कंटेंट परफॉर्मन्स / Content performance by type</li>
+                        <li>सोशल मीडिया मेट्रिक्स पुनरावलोकन / Social media metrics review</li>
+                        <li>प्रेक्षक वर्तन पॅटर्न / Audience behavior patterns</li>
+                        <li>तांत्रिक समस्या ट्रॅकिंग / Technical issues tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>मासिक अहवाल | Monthly Reporting:</h4>
+                    <ul>
+                        <li>सर्वसमावेशक प्लॅटफॉर्म परफॉर्मन्स / Comprehensive platform performance</li>
+                        <li>कंटेंट रणनीती प्रभाव / Content strategy effectiveness</li>
+                        <li>प्रेक्षक वाढ आणि धारणा / Audience growth and retention</li>
+                        <li>तांत्रिक सुधारणा ट्रॅकिंग / Technical improvements tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>त्रैमासिक रणनीतिक आढावा | Quarterly Strategic Review:</h4>
+                    <ul>
+                        <li>लक्ष्य साध्य मूल्यांकन / Goal achievement assessment</li>
+                        <li>रणनीतिक दिशा परिष्करण / Strategic direction refinement</li>
+                        <li>दीर्घकालीन ट्रेंड विश्लेषण / Long-term trend analysis</li>
+                        <li>संसाधन वाटप नियोजन / Resource allocation planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="footer">
+            <div class="container">
+                <h3>कलाकृती मीडिया</h3>
+                <p>व्यापक डिजिटल रणनीती | Comprehensive Digital Strategy</p>
+                <p>© 2025 कलाकृती मीडिया - सर्व हक्क राखीव | All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
